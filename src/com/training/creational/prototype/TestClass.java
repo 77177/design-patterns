@@ -49,7 +49,7 @@ public class TestClass implements Cloneable {
 
     @Override
     public String toString() {
-        return "TestClass{" +
+        return "TestClassDecorator{" +
                 "a=" + a +
                 ", b=" + b +
                 '}';

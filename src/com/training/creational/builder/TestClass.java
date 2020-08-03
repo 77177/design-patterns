@@ -69,7 +69,7 @@ public class TestClass {
 
     @Override
     public String toString() {
-        return "TestClass{" +
+        return "TestClassDecorator{" +
                 "a=" + aa +
                 ", b=" + bb +
                 ", c=" + cc +

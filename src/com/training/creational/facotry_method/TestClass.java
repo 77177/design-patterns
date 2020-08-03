@@ -18,7 +18,7 @@ public class TestClass {
 
     @Override
     public String toString() {
-        return "TestClass{" +
+        return "TestClassDecorator{" +
                 "a=" + a +
                 '}';
     }
