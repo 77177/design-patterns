@@ -28,12 +28,9 @@ public class Main {
                 .map(testClassFuture -> {
                     try {
                         return testClassFuture.get();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } catch (ExecutionException e) {
-                        e.printStackTrace();
+                    } catch (InterruptedException | ExecutionException e) {
+                        throw new RuntimeException(e);
                     }
-                    return null;
                 }).distinct().collect(Collectors.toList());
 
         System.out.println(singleton);
