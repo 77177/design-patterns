@@ -3,8 +3,8 @@ package com.training.creational.facotry_method;
 public class Main {
 
     public static void main(String[] args) {
-        TestClass testClass = TestClass.getObject();
+        ObjectWithFactoryMethod objectWithFactoryMethod = ObjectWithFactoryMethod.getObject();
 
-        System.out.println(testClass);
+        System.out.println(objectWithFactoryMethod);
     }
 }

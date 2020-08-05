@@ -1,6 +1,6 @@
 package com.training.behavioral.chain_of_responsibility;
 
-public class TestClassChainPart implements ChainPart{
+public class Chainlet implements ChainPart{
 
   private ChainPart chainPart;
 

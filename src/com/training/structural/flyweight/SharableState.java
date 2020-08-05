@@ -1,13 +1,13 @@
 package com.training.structural.flyweight;
 
-public class SomeState {
+public class SharableState {
 
   private int a;
 
-  public SomeState() {
+  public SharableState() {
   }
 
-  public SomeState(int a) {
+  public SharableState(int a) {
     this.a = a;
   }
 

@@ -11,20 +11,20 @@ public class Main {
 
         ExecutorService executorService = Executors.newCachedThreadPool();
 
-        Callable<TestClass> callable = () -> {
-            TestClass testClass = TestClass.getTestClass();
-            return testClass;
+        Callable<Singleton> callable = () -> {
+            Singleton singleton = Singleton.getSingleton();
+            return singleton;
         };
 
-        List<Callable<TestClass>> collect = Stream.iterate(0, i -> ++i)
+        List<Callable<Singleton>> collect = Stream.iterate(0, i -> ++i)
                 .limit(100)
                 .map(integer -> callable)
                 .collect(Collectors.toList());
 
 
-        List<Future<TestClass>> futures = executorService.invokeAll(collect);
+        List<Future<Singleton>> futures = executorService.invokeAll(collect);
 
-        List<TestClass> singleton = futures.stream()
+        List<Singleton> singleton = futures.stream()
                 .map(testClassFuture -> {
                     try {
                         return testClassFuture.get();

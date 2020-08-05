@@ -1,6 +1,6 @@
 package com.training.structural.decorator;
 
-public class FinalTestClassDecorator implements Decorator {
+public class FinalDecorator implements Decorator {
 
   @Override
   public void doThis() {

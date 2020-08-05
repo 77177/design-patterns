@@ -2,7 +2,7 @@ package com.training.structural.adapter;
 
 public class Adapter implements AdapterInterface {
 
-    B b;
+    private B b;
 
     @Override
     public void doStuff() {

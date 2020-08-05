@@ -1,6 +1,6 @@
 package com.training.behavioral.state;
 
-public class TestClass {
+public class AllStateClass {
 
   private State cutrrentState;
 

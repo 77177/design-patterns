@@ -1,6 +1,6 @@
 package com.training.structural.proxy;
 
-public class ProxyTestClass extends TestClass {
+public class ProxySomeClass extends SomeClass {
 
   @Override
   public String getHelloWorld() {

@@ -7,11 +7,11 @@ import java.util.stream.Stream;
 public class Main {
 
   public static void main(String[] args) {
-    ChainPart chainStart = new TestClassChainPart();
+    ChainPart chainStart = new Chainlet();
 
-    List<TestClassChainPart> collect = Stream.generate(() -> 1)
+    List<Chainlet> collect = Stream.generate(() -> 1)
         .limit(100)
-        .map(integer -> new TestClassChainPart())
+        .map(integer -> new Chainlet())
         .collect(Collectors.toList());
 
     chainStart.setNext(collect.get(0));

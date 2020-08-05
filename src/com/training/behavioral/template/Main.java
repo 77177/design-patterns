@@ -3,7 +3,7 @@ package com.training.behavioral.template;
 public class Main {
 
   public static void main(String[] args) {
-    Template template = new TestClass();
+    Template template = new TemplateImpl();
 
     template.run();
   }

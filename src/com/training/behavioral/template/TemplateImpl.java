@@ -1,6 +1,6 @@
 package com.training.behavioral.template;
 
-public class TestClass extends Template {
+public class TemplateImpl extends Template {
 
 
   @Override

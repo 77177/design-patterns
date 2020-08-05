@@ -1,6 +1,6 @@
 package com.training.behavioral.strategy;
 
-public class TestClass {
+public class AllStrategyClass {
 
   private Strategy strategy;
 

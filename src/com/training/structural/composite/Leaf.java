@@ -1,6 +1,6 @@
 package com.training.structural.composite;
 
-public class TestClassLeaf implements Component {
+public class Leaf implements Component {
 
   @Override
   public void doStuff() {

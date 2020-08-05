@@ -3,12 +3,12 @@ package com.training.behavioral.state;
 public class Main {
 
   public static void main(String[] args) {
-    TestClass testClass = new TestClass();
+    AllStateClass allStateClass = new AllStateClass();
 
-    testClass.changeState(new StateA());
+    allStateClass.changeState(new StateA());
 
-    testClass.execute(1);
-    testClass.execute(2);
-    testClass.execute(3);
+    allStateClass.execute(1);
+    allStateClass.execute(2);
+    allStateClass.execute(3);
   }
 }

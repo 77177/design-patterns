@@ -1,6 +1,6 @@
 package com.training.structural.composite;
 
-public class TestClassContainer implements Component {
+public class Container implements Component {
 
   private Component[] components;
 

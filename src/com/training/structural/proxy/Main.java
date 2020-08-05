@@ -3,7 +3,7 @@ package com.training.structural.proxy;
 public class Main {
 
   public static void main(String[] args) {
-    TestClass helloWorld = new ProxyTestClass();
+    SomeClass helloWorld = new ProxySomeClass();
     System.out.println(helloWorld.getHelloWorld());
   }
 

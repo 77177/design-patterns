@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class TestClass {
+public class Facade {
 
   public static void saveNumberToFile(int number, String filename) throws IOException {
     Path path = Paths.get(filename);

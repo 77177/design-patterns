@@ -1,6 +1,6 @@
 package com.training.structural.decorator;
 
-public class TestClassDecorator implements Decorator{
+public class IntermediateDecorator implements Decorator{
 
   private Decorator decorator;
 

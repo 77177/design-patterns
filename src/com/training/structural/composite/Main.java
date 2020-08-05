@@ -7,14 +7,14 @@ public class Main {
   public static void main(String[] args) {
     Component[] testClassLeaves = Stream.iterate(0, i -> ++i)
         .limit(101)
-        .map(integer -> new TestClassLeaf())
-        .map(testClassLeaf -> (Component) testClassLeaf)
+        .map(integer -> new Leaf())
+        .map(leaf -> (Component) leaf)
         .toArray(Component[]::new);
 
-    TestClassContainer component = new TestClassContainer();
-    TestClassContainer componentTest = new TestClassContainer();
+    Container component = new Container();
+    Container componentTest = new Container();
 
-    componentTest.setComponents(new TestClassLeaf[]{new TestClassLeaf(),new TestClassLeaf()});
+    componentTest.setComponents(new Leaf[]{new Leaf(),new Leaf()});
 
     testClassLeaves[100] = componentTest;
 

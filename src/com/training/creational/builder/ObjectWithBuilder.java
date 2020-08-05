@@ -1,6 +1,6 @@
 package com.training.creational.builder;
 
-public class TestClass {
+public class ObjectWithBuilder {
 
     private int aa;
     private int bb;
@@ -8,11 +8,11 @@ public class TestClass {
     private int dd;
     private int ee;
 
-    private TestClass(){
+    private ObjectWithBuilder(){
 
     }
 
-    private TestClass(int aa, int bb, int cc, int dd, int ee) {
+    private ObjectWithBuilder(int aa, int bb, int cc, int dd, int ee) {
         this.aa = aa;
         this.bb = bb;
         this.cc = cc;
@@ -20,7 +20,7 @@ public class TestClass {
         this.ee = ee;
     }
 
-    public TestClass(Builder builder) {
+    public ObjectWithBuilder(Builder builder) {
         this.aa = builder.a;
         this.bb = builder.b;
         this.cc = builder.c;
@@ -61,15 +61,15 @@ public class TestClass {
             return this;
         }
 
-        public TestClass build(){
-            return new TestClass(this);
+        public ObjectWithBuilder build(){
+            return new ObjectWithBuilder(this);
         }
     }
 
 
     @Override
     public String toString() {
-        return "TestClassDecorator{" +
+        return "IntermediateDecorator{" +
                 "a=" + aa +
                 ", b=" + bb +
                 ", c=" + cc +

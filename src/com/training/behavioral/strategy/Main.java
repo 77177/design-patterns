@@ -3,15 +3,15 @@ package com.training.behavioral.strategy;
 public class Main {
 
   public static void main(String[] args) {
-    TestClass testClass = new TestClass();
+    AllStrategyClass allStrategyClass = new AllStrategyClass();
 
-    testClass.setStrategy(new StrategyA());
+    allStrategyClass.setStrategy(new StrategyA());
 
-    testClass.execute();
+    allStrategyClass.execute();
 
-    testClass.setStrategy(new StrategyB());
+    allStrategyClass.setStrategy(new StrategyB());
 
-    testClass.execute();
+    allStrategyClass.execute();
   }
 
 }
